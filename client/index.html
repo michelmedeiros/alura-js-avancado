@@ -58,6 +58,15 @@
         <tfoot>
         </tfoot>
     </table>
-    <script src="js/index.js"></script>
+    <script src="js/app/models/Negociacao.js"></script>
+    <script>
+        let n1 = new Negociacao(new Date(), 10, 100.00);
+        console.log(n1);
+        n1._quantidade = 1000
+        console.log('Quant: ' + n1.quantidade);
+        console.log('Valor: ' + n1.valor);
+        console.log('Volume: ' + n1.volume);
+        console.log('Data: ' + n1.data);
+    </script    
 </body>
 </html>
